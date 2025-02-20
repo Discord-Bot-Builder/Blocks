@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'Dyanmic Block [Test]',
+    name: 'Dynamic Block [Test]',
 
     description:
         'Demo of all new features in version 1.0.0-preview.6 for block developers.',
@@ -36,7 +36,7 @@ module.exports = {
             id: 'item2',
             name: 'Item 2',
             description: 'An input to test.',
-            types: ['text', 'object'],
+            types: ['text', 'object', 'unspecified'],
             multiInput: true
         }
     ],
@@ -92,7 +92,9 @@ module.exports = {
                 name: 'Action',
                 description:
                     'Executes the following blocks when this block finishes its task.',
-                types: ['action']
+                types: ['action'],
+                multiport: true,
+                max: 3
             },
             {
                 id: 'item1',
