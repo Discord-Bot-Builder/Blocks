@@ -37,7 +37,7 @@ module.exports = {
             name: 'Item 2',
             description: 'An input to test.',
             types: ['text', 'object', 'unspecified'],
-            multiInput: true
+            multiport: true
         }
     ],
 
